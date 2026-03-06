@@ -16,7 +16,7 @@ protected WebDriver driver;
 @BeforeMethod
     public void setUp() {
         driver = DriverFactory.createChromeDriver();
-        driver.get("https://www.flipkart.com/");
+        driver.get("https://www.amazohn.com/");
     }
 
 	
