@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-17T17:09:06 IST" name="Test Suite" finished-at="2025-12-17T17:09:06 IST" duration-ms="29">
+  <suite started-at="2026-03-06T16:39:28 IST" name="Test Suite" finished-at="2026-03-06T16:39:40 IST" duration-ms="12127">
     <groups>
     </groups>
-    <test started-at="2025-12-17T17:09:06 IST" name="pages" finished-at="2025-12-17T17:09:06 IST" duration-ms="29">
-    </test> <!-- pages -->
+    <test started-at="2026-03-06T16:39:28 IST" name="purchaseflow" finished-at="2026-03-06T16:39:40 IST" duration-ms="12127">
+      <class name="tests.purchaseflowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.purchaseflowTest@47987356]" started-at="2026-03-06T16:39:28 IST" name="setUp" finished-at="2026-03-06T16:39:39 IST" duration-ms="10868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyendtoendflow()[pri:0, instance:tests.purchaseflowTest@47987356]" started-at="2026-03-06T16:39:39 IST" name="verifyendtoendflow" finished-at="2026-03-06T16:39:39 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyendtoendflow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.purchaseflowTest@47987356]" started-at="2026-03-06T16:39:39 IST" name="tearDown" finished-at="2026-03-06T16:39:40 IST" duration-ms="1109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.purchaseflowTest -->
+    </test> <!-- purchaseflow -->
   </suite> <!-- Test Suite -->
 </testng-results>

@@ -16,9 +16,7 @@ public class placeOrder {
 	
 	
 	
-	public void placeOder(WebDriver driver)
-	
-	{
+	public placeOrder(WebDriver driver) {
 		this.driver=driver;
 	}
 	public void filldetails(String n,String cou,String ci,String ca,String mon,String yr)

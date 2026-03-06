@@ -12,9 +12,8 @@ public class BrowserFactory {
 	
 	public static WebDriver getDriver() {
 		if(driver==null) {
-			//WebDriverManager.chromedriver().setup();
-			WebDriverManager.edgedriver().setup();
-			//driver=new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
 			driver.manage().window().maximize();
 		}
 		
@@ -26,11 +25,10 @@ public class BrowserFactory {
 	
 	public static void CloseDriver() 
 	{
-		// TODO Auto-generated method stub
 		if(driver!=null)
 		{
-		//	driver.quit();
-			//driver=null;
+			driver.quit();
+			driver=null;
 		}
 		
 	}

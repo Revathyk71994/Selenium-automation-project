@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.CartPage;
@@ -13,9 +14,14 @@ public class purchaseflowTest extends BaseTestClass{
 	public void verifyendtoendflow()
 	{
 		HomePage hm=new HomePage(driver);
-		productPage pp=new productPage();
+		productPage pp=new productPage(driver);
 		CartPage cp=new CartPage(driver);
-		placeOrder po=new placeOrder();
+		placeOrder po=new placeOrder(driver);
+
+		Assert.assertNotNull(hm);
+		Assert.assertNotNull(pp);
+		Assert.assertNotNull(cp);
+		Assert.assertNotNull(po);
 	}
 
 }

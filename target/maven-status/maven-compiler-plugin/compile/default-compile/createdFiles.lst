@@ -1,2 +1,3 @@
 seleniumwebdriver\BaseTestClass.class
 Utils\BrowserFactory.class
+Utils\DriverFactory.class

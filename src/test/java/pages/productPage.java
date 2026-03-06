@@ -7,7 +7,7 @@ public class productPage {
 	
 	WebDriver driver;
 	
-	public void ProductPage(WebDriver driver) {
+	public productPage(WebDriver driver) {
 		this.driver=driver;
 	}
 	
