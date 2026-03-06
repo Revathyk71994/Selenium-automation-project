@@ -1,6 +1,7 @@
 pages\productPage.class
+tests\purchaseflowTest.class
 BaseTest\testOne.class
-pages\placeOrder.class
-BaseTest\two.class
 pages\CartPage.class
 pages\HomePage.class
+pages\placeOrder.class
+BaseTest\two.class

@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
 
 public class HomePage {
 	
@@ -22,11 +21,12 @@ public class HomePage {
 		driver.get("https://www.demoblaze.com/");
 	}
 	
-	public void login(By username, By password)
+	public void login(String userName, String passWord)
 	{
 		driver.findElement(loginLink).click();
-		driver.findElement(username).sendKeys("Revuzzz");
-		driver.findElement(password).sendKeys("Revuz@123");
+		driver.findElement(username).sendKeys(userName);
+		driver.findElement(password).sendKeys(passWord);
+		driver.findElement(login).click();
 	}
 	
 	
