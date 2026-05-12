@@ -1,6 +1,9 @@
 package BaseTest;
 
+import java.awt.Window;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -15,6 +18,12 @@ import Utilities.ConfigReader;
 import Utilities.ExtentReport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
+	
+	
+	
+	
+	
+	
 	 public static WebDriver driver;
 	 
 	 ConfigReader config=new ConfigReader();
@@ -34,13 +43,18 @@ public static ExtentReports extent;
 	 @Test
 	void Applaunch1()
 	{
+		
+		 
+		//driver.set(new EdgeDriver()) ;
+		 
+		 
 		WebDriverManager.edgedriver().setup();
 	  driver=new EdgeDriver();
 		//driver.get("https://www.saucedemo.com/");
 	 // driver.get(config.getURL());
 		driver.manage().window().maximize();
 		  driver.get(config.getURL());
-
+//driver.switchTo().newWindow(WindowType.valueOf(null));
 
 	}
 @AfterMethod
@@ -56,5 +70,6 @@ public static ExtentReports extent;
         if (extent != null) extent.flush();
     }
 
+	
 
 }

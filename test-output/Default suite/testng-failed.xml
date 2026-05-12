@@ -5,6 +5,8 @@
     <classes>
       <class name="Test.OrderTest">
         <methods>
+          <include name="setUpReport"/>
+          <include name="flushReport"/>
           <include name="placeorderTest"/>
         </methods>
       </class> <!-- Test.OrderTest -->

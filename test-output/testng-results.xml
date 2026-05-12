@@ -1,29 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-12T12:24:52 IST" name="Suite" finished-at="2026-03-12T12:24:59 IST" duration-ms="6823">
+  <suite started-at="2026-04-22T22:12:14 IST" name="Suite" finished-at="2026-04-22T22:16:23 IST" duration-ms="249168">
     <groups>
     </groups>
-    <test started-at="2026-03-12T12:24:52 IST" name="Test" finished-at="2026-03-12T12:24:59 IST" duration-ms="6823">
-      <class name="Test.OrderTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:Test.OrderTest@76012793]" started-at="2026-03-12T12:24:52 IST" name="setUpReport" finished-at="2026-03-12T12:24:52 IST" duration-ms="17" status="PASS">
+    <test started-at="2026-04-22T22:12:14 IST" name="Test2" finished-at="2026-04-22T22:13:25 IST" duration-ms="71001">
+      <class name="BaseTest.BaseClass">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:BaseTest.BaseClass@6ad59d92]" started-at="2026-04-22T22:12:14 IST" name="setUpReport" finished-at="2026-04-22T22:12:14 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method signature="Applaunch1()[pri:0, instance:Test.OrderTest@76012793]" started-at="2026-03-12T12:24:52 IST" name="Applaunch1" finished-at="2026-03-12T12:24:58 IST" duration-ms="6595" status="PASS">
+        <test-method signature="Applaunch1()[pri:0, instance:BaseTest.BaseClass@6ad59d92]" started-at="2026-04-22T22:12:14 IST" name="Applaunch1" finished-at="2026-04-22T22:13:22 IST" duration-ms="68428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Applaunch1 -->
-        <test-method signature="placeorderTest()[pri:0, instance:Test.OrderTest@76012793]" started-at="2026-03-12T12:24:59 IST" name="placeorderTest" finished-at="2026-03-12T12:24:59 IST" duration-ms="22" status="FAIL">
-          <exception class="java.lang.NoClassDefFoundError">
+        <test-method is-config="true" signature="tearDown1()[pri:0, instance:BaseTest.BaseClass@6ad59d92]" started-at="2026-04-22T22:13:23 IST" name="tearDown1" finished-at="2026-04-22T22:13:25 IST" duration-ms="2150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown1 -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:BaseTest.BaseClass@6ad59d92]" started-at="2026-04-22T22:16:23 IST" name="flushReport" finished-at="2026-04-22T22:16:23 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- BaseTest.BaseClass -->
+    </test> <!-- Test2 -->
+    <test started-at="2026-04-22T22:12:14 IST" name="Test" finished-at="2026-04-22T22:16:23 IST" duration-ms="249168">
+      <class name="Test.OrderTest">
+        <test-method signature="Applaunch1()[pri:0, instance:Test.OrderTest@76012793]" started-at="2026-04-22T22:12:14 IST" name="Applaunch1" finished-at="2026-04-22T22:13:21 IST" duration-ms="67463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Applaunch1 -->
+        <test-method signature="placeorderTest()[pri:0, instance:Test.OrderTest@76012793]" started-at="2026-04-22T22:13:23 IST" name="placeorderTest" finished-at="2026-04-22T22:16:23 IST" duration-ms="180435" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[org/apache/poi/POIException]]>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [90023a64e2bfec307bedfbee29cf3570, findElement {using=xpath, value=//input[@id='password']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 21964, ms:edgeOptions: {debuggerAddress: localhost:50233}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\1031699\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50233/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/POIException
-at Utilities.ExcelReader.<init>(ExcelReader.java:22)
-at Test.OrderTest.placeorderTest(OrderTest.java:19)
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [90023a64e2bfec307bedfbee29cf3570, findElement {using=xpath, value=//input[@id='password']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 21964, ms:edgeOptions: {debuggerAddress: localhost:50233}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\1031699\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50233/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at Pages.LoginPage1.login1(LoginPage1.java:25)
+at Test.OrderTest.placeorderTest(OrderTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -40,33 +75,24 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.ClassNotFoundException: org.apache.poi.POIException
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-... 30 more
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2792)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+... 3 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeorderTest -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:Test.OrderTest@76012793]" started-at="2026-03-12T12:24:59 IST" name="flushReport" finished-at="2026-03-12T12:24:59 IST" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReport -->
       </class> <!-- Test.OrderTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

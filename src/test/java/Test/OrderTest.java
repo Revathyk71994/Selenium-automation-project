@@ -16,16 +16,16 @@ public void placeorderTest()
 		 ConfigReader config=new ConfigReader();
 		BaseClass bs=new BaseClass();
 		LoginPage1 lp=new LoginPage1(driver);
-		ExcelReader excel=new ExcelReader();
-		String username=excel.getData(1, 0);
+		//ExcelReader excel=new ExcelReader();
+		//String username=excel.getData(1, 0);
 		
-		String password=excel.getData(1, 1);
-		String browser=excel.getData(1, 2);
+		//String password=excel.getData(1, 1);
+		//String browser=excel.getData(1, 2);
 
 
-		lp.login1(username, password);
+		//lp.login1(username, password);
 		
-		//lp.login1("standard_user", "secret_sauce");
+		lp.login1("standard_user", "secret_sauce");
 		//lp.login1(config.getUsername(),config.getPassword());
 		
 		
